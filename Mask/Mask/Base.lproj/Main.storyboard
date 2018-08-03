@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jqb-0W-Rxp">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DVV-dh-M3R">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="213.5"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l8s-ek-0NB">
+                                        <rect key="frame" x="0.0" y="213.5" width="375" height="213.5"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7In-Yb-fLO">
+                                        <rect key="frame" x="0.0" y="433.5" width="375" height="213.5"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.74509803919999995" green="0.74901960779999999" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="l8s-ek-0NB" firstAttribute="height" secondItem="jqb-0W-Rxp" secondAttribute="height" multiplier="0.33" id="2np-ex-7l5"/>
+                                    <constraint firstItem="l8s-ek-0NB" firstAttribute="leading" secondItem="jqb-0W-Rxp" secondAttribute="leading" id="3Xs-1a-bpE"/>
+                                    <constraint firstItem="DVV-dh-M3R" firstAttribute="top" secondItem="jqb-0W-Rxp" secondAttribute="top" id="6MA-iu-AsU"/>
+                                    <constraint firstItem="7In-Yb-fLO" firstAttribute="leading" secondItem="jqb-0W-Rxp" secondAttribute="leading" id="6rt-vp-mHF"/>
+                                    <constraint firstItem="DVV-dh-M3R" firstAttribute="width" secondItem="jqb-0W-Rxp" secondAttribute="width" id="DbO-VC-vHm"/>
+                                    <constraint firstAttribute="trailing" secondItem="7In-Yb-fLO" secondAttribute="trailing" id="IYW-jN-iz4"/>
+                                    <constraint firstItem="7In-Yb-fLO" firstAttribute="height" secondItem="jqb-0W-Rxp" secondAttribute="height" multiplier="0.33" id="JdK-ks-TXP"/>
+                                    <constraint firstItem="DVV-dh-M3R" firstAttribute="height" secondItem="jqb-0W-Rxp" secondAttribute="height" multiplier="0.33" id="NBr-KB-qFU"/>
+                                    <constraint firstItem="l8s-ek-0NB" firstAttribute="top" secondItem="DVV-dh-M3R" secondAttribute="bottom" id="ORY-sZ-Kmu"/>
+                                    <constraint firstItem="DVV-dh-M3R" firstAttribute="leading" secondItem="jqb-0W-Rxp" secondAttribute="leading" id="SnA-R7-Wt5"/>
+                                    <constraint firstAttribute="trailing" secondItem="l8s-ek-0NB" secondAttribute="trailing" id="Wl5-Tm-Ooo"/>
+                                    <constraint firstAttribute="bottom" secondItem="7In-Yb-fLO" secondAttribute="bottom" id="oW7-0Q-AKJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jqb-0W-Rxp" secondAttribute="bottom" id="3dM-RJ-e6G"/>
+                            <constraint firstItem="jqb-0W-Rxp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="72f-r6-wqO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jqb-0W-Rxp" secondAttribute="trailing" id="Osr-Uy-5pP"/>
+                            <constraint firstItem="jqb-0W-Rxp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XWw-BF-q2M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomView" destination="7In-Yb-fLO" id="yfW-dV-tas"/>
+                        <outlet property="middleView" destination="l8s-ek-0NB" id="EI8-Ep-rKO"/>
+                        <outlet property="topView" destination="DVV-dh-M3R" id="u8T-lI-veT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
